@@ -54,4 +54,18 @@ public class GameController {
                 )
         );
     }
+
+    @FXML
+    void onMouseClickedHelpButton(MouseEvent event) {
+        new AlertBox().showAlertBox(
+                "Craps Game - Ayuda",
+                "¿Cómo se juega?",
+                "TIRO DE SALIDA (primer lanzamiento):\n"
+                + "  • 7 u 11: ganas automáticamente.\n"
+                + "  • 2, 3 o 12 (\"Craps\"): pierdes.\n"
+                + "  • 4, 5, 6, 8, 9 o 10: se establece tu \"punto\".\n\n"
+                + "SI HAY PUNTO, sigue lanzando:\n"
+                + "  • Si sacas tu punto antes que un 7: ganas.\n"
+                + "  • Si sacas 7 antes que tu punto: pierdes.");
+    }
 }
